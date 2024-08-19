@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitch</title>
+    <link rel="stylesheet" href="Code.css">
+</head>
+<body id="Background">
+    <h1 id="Header1">Mitch Walton</h1>
+    <div class="container">
+        <div class="text-container">
+            <p class="bordered-text">Hey there! I’m Mitch, a spirited explorer with a knack for finding the best local coffee spots and whipping up delicious meals that might just make you fall in love with homemade mac and cheese. When I’m not experimenting in the kitchen, you’ll find me hiking trails, catching live music, or plotting my next travel adventure.
+
+                I value genuine connections and am always up for a good laugh or a deep conversation. If you’re someone who enjoys spontaneous road trips, cozy nights in with a great movie, or trying out new recipes, let’s connect! Bonus points if you love dogs—I have a loyal furry friend who’s always up for a game of fetch.
+                
+                Looking for someone who’s passionate, kind-hearted, and ready to share in the little joys of life. Let’s make some memories and see where this journey takes us!
+                
+                </p>
+        </div>
+        <div class="slideshow-container">
+            <img class="mySlides" src="Mitch1.jpg" style="width:100%">
+            <img class="mySlides" src="Mitch2.jpg" style="width:100%">
+            <img class="mySlides" src="Mitch3.jpg" style="width:100%">
+        </div>
+    </div>
+    <div class="text-below-slideshow">
+        <p>MITCH IS MY NAME RIZZ IS MY GAME</p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.facebook.com/yourprofile" target="_blank">
+            <img src="Facebook.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank">
+            <img src="Snapchat.png" alt="Snapchat" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+
+     <!-- Popup Panel -->
+     <div id="popupPanel" class="popup-panel">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Mitch Walton</h2>
+            <p>Mitch Is only 10 miles away!!!</p>
+            <img src="Popup photo.jpg" alt="Popup Image" class="popup-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    background-color: lightblue; /* Set the background color */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+#Header1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    font-family: 'Arial', sans-serif; /* Custom font */
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.bordered-text {
+    display: inline-block; /* Make the border fit the text size */
+    padding: 10px; /* Adjust padding as needed */
+    border: 2px solid #ff7e5f; /* Add border around the text */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    background-color: white; /* Optional: Add background color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.slideshow-container {
+    flex: 0 0 300px; /* Fixed width for the slideshow */
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    border: 5px solid #ff7e5f; /* Add border around the slideshow */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    padding: 10px; /* Optional: Add padding inside the border */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icon {
+    width: 40px; /* Adjust the size of the social icons */
+    height: auto;
+    margin: 0 10px; /* Space between icons */
+}
+
+/* Popup Panel Styles */
+.popup-panel {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    max-width: 100%; /* Increase the width of the popup content */
+    max-height: 100%; /* Increase the height of the popup content */
+    overflow: hidden; /* Hide overflow content */
+    z-index: 1; /* Ensure the popup content is above the image */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Increase the maximum width of the image */
+    max-height: 400px; /* Increase the maximum height of the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    opacity: 0.3; /* Make the image semi-transparent */
+    z-index: 0; /* Position the image behind the text */
+}
+.text-below-slideshow {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
